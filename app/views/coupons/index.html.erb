@@ -1,0 +1,5 @@
+<%@coupons.each do |coupon|%>
+  <h1><%=coupon.store%></h1>
+  <a HREF="/coupons/<%=coupon.id%>"><%=coupon.coupon_code%></a>
+  <br>
+  <%end%>

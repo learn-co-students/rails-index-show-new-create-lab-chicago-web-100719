@@ -1,0 +1,8 @@
+<h1>Edit Coupon</h1>
+<%=form_tag coupon_path, method: :put do%>
+  <label>Coupon Code:</label>
+  <%=text_field_tag :'coupon[coupon_code]', @coupon.coupon_code%>
+  <label>Store</label>
+  <%=text_field_tag :'coupon[store]', @coupon.store%>
+  <%=submit_tag "Edit Coupon"%>
+  <%end%>
